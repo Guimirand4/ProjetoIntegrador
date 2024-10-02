@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.*;	
 import javax.swing.*;	
 import javax.swing.event.*;
-public class ExJList extends JFrame 
+public class ExJList extends JFrame
 	implements ListSelectionListener, ActionListener{  
 	JLabel l1;  JTextField t1;    JButton bquant,bindice,bclear;
 	JList lista; // Criando objeto Lista	
@@ -88,6 +88,8 @@ public class ExJList extends JFrame
 			}	
 		}        
 	}
+	
+	
 	public void valueChanged(ListSelectionEvent e){
 		l1.setText("Índice Selecionado: " + lista.getSelectedValue()); 
 	}
